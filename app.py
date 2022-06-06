@@ -21,3 +21,7 @@ def getSongsFrom(anArtist):
 @app.route('/song/<string:aSongTitle>')
 def getDescriptionOf(aSongTitle):
 	return jsonify(list(songs[songs['title'] == aSongTitle]['description']))
+
+# localhost
+# if __name__ == '__main__':
+# 	app.run(port=8000)
