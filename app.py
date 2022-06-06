@@ -12,7 +12,7 @@ def index():
 
 @app.route('/ping')
 def ping():
-	return 'pong'
+	return 'pong :)'
 
 @app.route('/artist/<string:anArtist>')
 def getSongsFrom(anArtist):
